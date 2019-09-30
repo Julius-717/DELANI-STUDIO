@@ -12,10 +12,10 @@ $(document).ready(function() {
         $("#kash3").toggle();
         $("#click3").toggle();
     });
-});
+
 
 // For hover effect on PORTFOLIO
-$(document).ready(function()  {
+
     $("#work1").mouseover(function()  {
         $("pWork1").show();
     });
@@ -72,9 +72,8 @@ $(document).ready(function()  {
         $('#pWork8').hide();
     });
 
-});
 
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("submit");
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function(event) {
@@ -103,4 +102,13 @@ btn.onclick = function(event) {
 // MDB Lightbox Init
 $(function  ()  {
     $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+
+    $("form").submit(function(event)  {  
+        var name= $("input#name").val();
+    });
+
+function contact(val){
+    alert("Hello " + name + " We have received your message.Thank you for reaching out to us.");
+};
 });
